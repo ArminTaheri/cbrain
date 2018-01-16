@@ -1,0 +1,9 @@
+.book .book-summary .book-logo {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.book .book-summary .book-logo img {
+  width: 70%;
+}

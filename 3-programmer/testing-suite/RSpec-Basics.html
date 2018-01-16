@@ -1,0 +1,2130 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>RSpec Basics · My Book</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="Test-Overview.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../../images/favicon.ico' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../../images/favicon.ico'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../../images/favicon.ico">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../../images/favicon.ico">
+        
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../0-overview/">
+            
+                <a href="../../0-overview/">
+            
+                    
+                    CBRAIN Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../1-setup/Setup-Guide.html">
+            
+                <a href="../../1-setup/Setup-Guide.html">
+            
+                    
+                    Setup guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html">
+            
+                    
+                    Common setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#about-the-platform">
+            
+                    
+                    About the platform
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#the-two-rails-applications">
+            
+                    
+                    Rails applications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#the-three-rails-environments">
+            
+                    
+                    Rails environments
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#system-requirements">
+            
+                    
+                    System requirements
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#supported-operating-systems">
+            
+                    
+                    Supported operating systems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#openssh">
+            
+                    
+                    OpenSSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#mysql-or-mariadb">
+            
+                    
+                    MySQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#xcode-for-mac-os-x">
+            
+                    
+                    Xcode for Mac OS X
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#software-installation">
+            
+                    
+                    Software installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#rvm">
+            
+                    
+                    RVM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#ruby">
+            
+                    
+                    Ruby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#cbrain-code-base">
+            
+                    
+                    CBRAIN code base
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.4" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#gems">
+            
+                    
+                    Gems
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.5" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#plugins-installation">
+            
+                    
+                    Plugins installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../../1-setup/Common-Setup.html">
+            
+                <a href="../../1-setup/Common-Setup.html#moving-on">
+            
+                    
+                    Moving on
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../1-setup/BrainPortal-Setup.html">
+            
+                <a href="../../1-setup/BrainPortal-Setup.html">
+            
+                    
+                    BrainPortal setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../../1-setup/BrainPortal-Setup.html">
+            
+                <a href="../../1-setup/BrainPortal-Setup.html#files-configuration">
+            
+                    
+                    Files configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1.1" data-path="../../1-setup/BrainPortal-Setup.html">
+            
+                <a href="../../1-setup/BrainPortal-Setup.html#database-connection">
+            
+                    
+                    Database connection
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.2" data-path="../../1-setup/BrainPortal-Setup.html">
+            
+                <a href="../../1-setup/BrainPortal-Setup.html#application-name">
+            
+                    
+                    Application name
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.3" data-path="../../1-setup/BrainPortal-Setup.html">
+            
+                <a href="../../1-setup/BrainPortal-Setup.html#database-schema-initialization">
+            
+                    
+                    Database schema initialization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.1.4" data-path="../../1-setup/BrainPortal-Setup.html">
+            
+                <a href="../../1-setup/BrainPortal-Setup.html#brainportal-console-checks">
+            
+                    
+                    BrainPortal console checks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../1-setup/BrainPortal-Setup.html">
+            
+                <a href="../../1-setup/BrainPortal-Setup.html#interface-configuration">
+            
+                    
+                    Interface configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.2.1" data-path="../../1-setup/BrainPortal-Setup.html">
+            
+                <a href="../../1-setup/BrainPortal-Setup.html#time-zone-configuration">
+            
+                    
+                    Time zone configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2.2" data-path="../../1-setup/BrainPortal-Setup.html">
+            
+                <a href="../../1-setup/BrainPortal-Setup.html#data-cache-configuration">
+            
+                    
+                    Data cache configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../1-setup/Bourreau-Setup.html">
+            
+                <a href="../../1-setup/Bourreau-Setup.html">
+            
+                    
+                    Bourreau setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../../1-setup/Bourreau-Setup.html">
+            
+                <a href="../../1-setup/Bourreau-Setup.html#bourreau-application">
+            
+                    
+                    Bourreau Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../../1-setup/Bourreau-Setup.html">
+            
+                <a href="../../1-setup/Bourreau-Setup.html#ssh-setup">
+            
+                    
+                    SSH setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../../1-setup/Bourreau-Setup.html">
+            
+                <a href="../../1-setup/Bourreau-Setup.html#bourreau-configuration">
+            
+                    
+                    Bourreau configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../../1-setup/Bourreau-Setup.html">
+            
+                <a href="../../1-setup/Bourreau-Setup.html#moving-on">
+            
+                    
+                    Moving on
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../1-setup/Communications.html">
+            
+                <a href="../../1-setup/Communications.html">
+            
+                    
+                    Communications
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../../1-setup/Troubleshooting.html">
+            
+                <a href="../../1-setup/Troubleshooting.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1" data-path="../../1-setup/Troubleshooting.html">
+            
+                <a href="../../1-setup/Troubleshooting.html#installation-issues">
+            
+                    
+                    Installation Issues
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.1.1" data-path="../../1-setup/Troubleshooting.html">
+            
+                <a href="../../1-setup/Troubleshooting.html#installing-the-database">
+            
+                    
+                    Installing the database
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.1.2" data-path="../../1-setup/Troubleshooting.html">
+            
+                <a href="../../1-setup/Troubleshooting.html#installing-ruby-on-a-server-without-root-access">
+            
+                    
+                    Installing Ruby on a server without root access
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5.2" data-path="../../1-setup/Troubleshooting.html">
+            
+                <a href="../../1-setup/Troubleshooting.html#runtime-issues">
+            
+                    
+                    Runtime Issues
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.5.2.1" data-path="../../1-setup/Troubleshooting.html">
+            
+                <a href="../../1-setup/Troubleshooting.html#mysql2-error">
+            
+                    
+                    Mysql2 error
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../2-interfaces/Interface-Guides.html">
+            
+                <a href="../../2-interfaces/Interface-Guides.html">
+            
+                    
+                    Interface guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../2-interfaces/admin_Administrator-Guides.html">
+            
+                <a href="../../2-interfaces/admin_Administrator-Guides.html">
+            
+                    
+                    Administrator Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1" data-path="../../2-interfaces/admin_Dashboard.html">
+            
+                <a href="../../2-interfaces/admin_Dashboard.html">
+            
+                    
+                    Dashboard
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.1.1" data-path="../../2-interfaces/admin_Dashboard.html">
+            
+                <a href="../../2-interfaces/admin_Dashboard.html#system-information">
+            
+                    
+                    System information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.1.2" data-path="../../2-interfaces/admin_Dashboard.html">
+            
+                <a href="../../2-interfaces/admin_Dashboard.html#account-information">
+            
+                    
+                    Account information
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.1.3" data-path="../../2-interfaces/admin_Dashboard.html">
+            
+                <a href="../../2-interfaces/admin_Dashboard.html#latest-updated-information">
+            
+                    
+                    Latest updated information
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2" data-path="../../2-interfaces/admin_Users.html">
+            
+                <a href="../../2-interfaces/admin_Users.html">
+            
+                    
+                    Users
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.2.1" data-path="../../2-interfaces/admin_Users.html">
+            
+                <a href="../../2-interfaces/admin_Users.html#how-to-create-a-user">
+            
+                    
+                    How to create a User
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.2.2" data-path="../../2-interfaces/admin_Users.html">
+            
+                <a href="../../2-interfaces/admin_Users.html#lock-or-delete-a-user">
+            
+                    
+                    Lock/Delete a User
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.3" data-path="../../2-interfaces/admin_Sites.html">
+            
+                <a href="../../2-interfaces/admin_Sites.html">
+            
+                    
+                    Sites
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.3.1" data-path="../../2-interfaces/admin_Sites.html">
+            
+                <a href="../../2-interfaces/admin_Sites.html#how-to-create-a-site">
+            
+                    
+                    How to create a Site
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4" data-path="../../2-interfaces/admin_Tools.html">
+            
+                <a href="../../2-interfaces/admin_Tools.html">
+            
+                    
+                    Tools
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.4.1" data-path="../../2-interfaces/admin_Tools.html">
+            
+                <a href="../../2-interfaces/admin_Tools.html#autoload-tools">
+            
+                    
+                    Autoload Tools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4.2" data-path="../../2-interfaces/admin_Tools.html">
+            
+                <a href="../../2-interfaces/admin_Tools.html#how-to-create-a-tool">
+            
+                    
+                    How to create a Tool
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4.3" data-path="../../2-interfaces/admin_Tools.html">
+            
+                <a href="../../2-interfaces/admin_Tools.html#how-to-create-a-tool-config">
+            
+                    
+                    How to create a tool config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4.4" data-path="../../2-interfaces/admin_Tools.html">
+            
+                <a href="../../2-interfaces/admin_Tools.html#how-to-view-a-tool-config">
+            
+                    
+                    How to view a tool config
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.4.5" data-path="../../2-interfaces/admin_Tools.html">
+            
+                <a href="../../2-interfaces/admin_Tools.html#reports">
+            
+                    
+                    Reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5" data-path="../../2-interfaces/admin_Data-Providers.html">
+            
+                <a href="../../2-interfaces/admin_Data-Providers.html">
+            
+                    
+                    Data Providers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.5.1" data-path="../../2-interfaces/admin_Data-Providers.html">
+            
+                <a href="../../2-interfaces/admin_Data-Providers.html#how-to-create-a-data-provider">
+            
+                    
+                    How to create a Data Provider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5.2" data-path="../../2-interfaces/admin_Data-Providers.html">
+            
+                <a href="../../2-interfaces/admin_Data-Providers.html#types-of-data-providers">
+            
+                    
+                    Types of Data Providers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.5.3" data-path="../../2-interfaces/admin_Data-Providers.html">
+            
+                <a href="../../2-interfaces/admin_Data-Providers.html#reports">
+            
+                    
+                    Reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6" data-path="../../2-interfaces/admin_Servers.html">
+            
+                <a href="../../2-interfaces/admin_Servers.html">
+            
+                    
+                    Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.6.1" data-path="../../2-interfaces/admin_Portals.html">
+            
+                <a href="../../2-interfaces/admin_Portals.html">
+            
+                    
+                    Portals
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.6.2" data-path="../../2-interfaces/admin_Execution-Servers.html">
+            
+                <a href="../../2-interfaces/admin_Execution-Servers.html">
+            
+                    
+                    Execution servers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.7" data-path="../../2-interfaces/admin_Projects.html">
+            
+                <a href="../../2-interfaces/admin_Projects.html">
+            
+                    
+                    Projects
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.7.1" data-path="../../2-interfaces/admin_Projects.html">
+            
+                <a href="../../2-interfaces/admin_Projects.html#how-to-create-a-project">
+            
+                    
+                    How to create a Project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.7.2" data-path="../../2-interfaces/admin_Projects.html">
+            
+                <a href="../../2-interfaces/admin_Projects.html#delete-a-project">
+            
+                    
+                    Delete a project
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.8" data-path="../../2-interfaces/admin_Messages.html">
+            
+                <a href="../../2-interfaces/admin_Messages.html">
+            
+                    
+                    Messages
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.8.1" data-path="../../2-interfaces/admin_Messages.html">
+            
+                <a href="../../2-interfaces/admin_Messages.html#how-to-create-a-message">
+            
+                    
+                    How to create a Message
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.8.2" data-path="../../2-interfaces/admin_Messages.html">
+            
+                <a href="../../2-interfaces/admin_Messages.html#filters">
+            
+                    
+                    Filters
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.9" data-path="../../2-interfaces/admin_Exceptions.html">
+            
+                <a href="../../2-interfaces/admin_Exceptions.html">
+            
+                    
+                    Exceptions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.9.1" data-path="../../2-interfaces/admin_Exceptions.html">
+            
+                <a href="../../2-interfaces/admin_Exceptions.html#exceptions-tab">
+            
+                    
+                    Exceptions tab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.9.2" data-path="../../2-interfaces/admin_Exceptions.html">
+            
+                <a href="../../2-interfaces/admin_Exceptions.html#view-information-about-an-exception">
+            
+                    
+                    View information about an exception
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.10" data-path="../../2-interfaces/admin_Reports-And-Monitoring.html">
+            
+                <a href="../../2-interfaces/admin_Reports-And-Monitoring.html">
+            
+                    
+                    Reports and Monitoring
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.10.1" data-path="../../2-interfaces/admin_Reports-And-Monitoring.html">
+            
+                <a href="../../2-interfaces/admin_Reports-And-Monitoring.html#automatic-tabular-report-maker">
+            
+                    
+                    Automatic tabular Report maker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.10.2" data-path="../../2-interfaces/admin_Reports-And-Monitoring.html">
+            
+                <a href="../../2-interfaces/admin_Reports-And-Monitoring.html#tools-report">
+            
+                    
+                    Tools report
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.10.3" data-path="../../2-interfaces/admin_Reports-And-Monitoring.html">
+            
+                <a href="../../2-interfaces/admin_Reports-And-Monitoring.html#data-provider-reports">
+            
+                    
+                    Data Provider reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.10.4" data-path="../../2-interfaces/admin_Reports-And-Monitoring.html">
+            
+                <a href="../../2-interfaces/admin_Reports-And-Monitoring.html#server-reports">
+            
+                    
+                    Server reports
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.10.5" data-path="../../2-interfaces/admin_Reports-And-Monitoring.html">
+            
+                <a href="../../2-interfaces/admin_Reports-And-Monitoring.html#task-statistics">
+            
+                    
+                    Task statistics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.10.6" data-path="../../2-interfaces/admin_Reports-And-Monitoring.html">
+            
+                <a href="../../2-interfaces/admin_Reports-And-Monitoring.html#portal-log-page">
+            
+                    
+                    Portal log page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.10.7" data-path="../../2-interfaces/admin_Reports-And-Monitoring.html">
+            
+                <a href="../../2-interfaces/admin_Reports-And-Monitoring.html#log-information">
+            
+                    
+                    Log information
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.11" data-path="../../2-interfaces/admin_Custom-Licenses.html">
+            
+                <a href="../../2-interfaces/admin_Custom-Licenses.html">
+            
+                    
+                    Custom Licenses
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1.11.1" data-path="../../2-interfaces/admin_Custom-Licenses.html">
+            
+                <a href="../../2-interfaces/admin_Custom-Licenses.html#which-resources-can-have-a-license">
+            
+                    
+                    Which resources can have a license
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.11.2" data-path="../../2-interfaces/admin_Custom-Licenses.html">
+            
+                <a href="../../2-interfaces/admin_Custom-Licenses.html#format-and-location-of-license-files">
+            
+                    
+                    Format and location of license files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.1.11.3" data-path="../../2-interfaces/admin_Custom-Licenses.html">
+            
+                <a href="../../2-interfaces/admin_Custom-Licenses.html#how-to-register-a-license">
+            
+                    
+                    How to register a license
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../2-interfaces/user_User-Guides.html">
+            
+                <a href="../../2-interfaces/user_User-Guides.html">
+            
+                    
+                    User Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.2.1" data-path="../../2-interfaces/user_User-Guides.html">
+            
+                <a href="../../2-interfaces/user_User-Guides.html#getting-started">
+            
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.2" data-path="../../2-interfaces/user_User-Guides.html">
+            
+                <a href="../../2-interfaces/user_User-Guides.html#create-a-project">
+            
+                    
+                    Create a project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.3" data-path="../../2-interfaces/user_User-Guides.html">
+            
+                <a href="../../2-interfaces/user_User-Guides.html#upload-files">
+            
+                    
+                    Upload files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.4" data-path="../../2-interfaces/user_User-Guides.html">
+            
+                <a href="../../2-interfaces/user_User-Guides.html#start-a-task">
+            
+                    
+                    Start a task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.5" data-path="../../2-interfaces/user_User-Guides.html">
+            
+                <a href="../../2-interfaces/user_User-Guides.html#check-the-progress-of-a-task">
+            
+                    
+                    Check the progress of a task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.6" data-path="../../2-interfaces/user_User-Guides.html">
+            
+                <a href="../../2-interfaces/user_User-Guides.html#viewing-the-output-of-a-finished-task">
+            
+                    
+                    Viewing the output of a finished task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.7" data-path="../../2-interfaces/user_User-Guides.html">
+            
+                <a href="../../2-interfaces/user_User-Guides.html#downloading-processed-output-files-from-finished-task">
+            
+                    
+                    Downloading processed output files from finished task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.8" data-path="../../2-interfaces/user_User-Guides.html">
+            
+                <a href="../../2-interfaces/user_User-Guides.html#optional-advanced-feature-of-cbrain">
+            
+                    
+                    Optional advanced feature of CBRAIN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.9" data-path="../../2-interfaces/user_User-Guides.html">
+            
+                <a href="../../2-interfaces/user_User-Guides.html#help-and-technical-support">
+            
+                    
+                    Help and technical support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2.10" data-path="../../2-interfaces/user_User-Guides.html">
+            
+                <a href="../../2-interfaces/user_User-Guides.html#citation">
+            
+                    
+                    Citation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../Programmer-Guides.html">
+            
+                <a href="../Programmer-Guides.html">
+            
+                    
+                    Programmer Guides
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../Programming-Style.html">
+            
+                <a href="../Programming-Style.html">
+            
+                    
+                    Programming style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../cbrain-task/CbrainTask-Programmer-Guide.html">
+            
+                <a href="../cbrain-task/CbrainTask-Programmer-Guide.html">
+            
+                    
+                    CbrainTask an Userfile Programmer Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.1" data-path="../Plugins-Structure.html">
+            
+                <a href="../Plugins-Structure.html">
+            
+                    
+                    Plugins Structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2" data-path="../cbrain-task/CbrainTask-Programmer-Guide.html">
+            
+                <a href="../cbrain-task/CbrainTask-Programmer-Guide.html">
+            
+                    
+                    CbrainTask Programmer Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.2.2.1" data-path="../cbrain-task/New-Task-Tutorial.html">
+            
+                <a href="../cbrain-task/New-Task-Tutorial.html">
+            
+                    
+                    New Task Tutorial
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2.2" data-path="../cbrain-task/Rails-CbrainTask-Generator.html">
+            
+                <a href="../cbrain-task/Rails-CbrainTask-Generator.html">
+            
+                    
+                    Rails CbrainTask Generator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2.3" data-path="../cbrain-task/CbrainTask-Parallelization.html">
+            
+                <a href="../cbrain-task/CbrainTask-Parallelization.html">
+            
+                    
+                    Parallelization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2.4" data-path="../cbrain-task/CbrainTask-Recovery-and-Restart.html">
+            
+                <a href="../cbrain-task/CbrainTask-Recovery-and-Restart.html">
+            
+                    
+                    Recovery And Restart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2.5" data-path="../cbrain-task/CbrainTask-Prerequisites.html">
+            
+                <a href="../cbrain-task/CbrainTask-Prerequisites.html">
+            
+                    
+                    Task Dependencies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2.6" data-path="../cbrain-task/CbrainTask-SharedWorkDir.html">
+            
+                <a href="../cbrain-task/CbrainTask-SharedWorkDir.html">
+            
+                    
+                    Sharing A Work Directory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2.2.7" data-path="../cbrain-task/Task-Helpers.html">
+            
+                <a href="../cbrain-task/Task-Helpers.html">
+            
+                    
+                    Task Helpers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="Testing-Suite.html">
+            
+                <a href="Testing-Suite.html">
+            
+                    
+                    Testing Suite
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.3.1" data-path="Test-Overview.html">
+            
+                <a href="Test-Overview.html">
+            
+                    
+                    Testing Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.1.3.2" data-path="RSpec-Basics.html">
+            
+                <a href="RSpec-Basics.html">
+            
+                    
+                    RSpec Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >RSpec Basics</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>The following is a basic introduction to some of the basic constructs
+in RSpec. This is by no means a complete guide, but should be enough
+to get started writing specs.</p>
+<h2 id="specs-and-examples">Specs and examples</h2>
+<p>A set of tests for a given aspect of the code (class, module, method) is
+referred to as a <strong>spec</strong> and the individual tests are <strong>examples</strong>. The
+first step when writing a spec is to require the <code>spec_helper</code> file, and
+then create a <code>describe</code> block which defines what we&apos;re writing a spec for.</p>
+<p>For example, to write a spec for the Group model, we would start
+like this:</p>
+<pre><code class="lang-ruby">  <span class="hljs-keyword">require</span> <span class="hljs-string">&apos;spec_helper&apos;</span>
+
+  describe Group <span class="hljs-keyword">do</span>
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Describe blocks can be nested, so the next step would be to add a describe
+block for each method we wish to test. To keep things simple, we will just
+write a spec for the <code>#pretty_category_name</code> method:</p>
+<pre><code class="lang-ruby">  <span class="hljs-keyword">require</span> <span class="hljs-string">&apos;spec_helper&apos;</span>
+
+  describe Group <span class="hljs-keyword">do</span>
+    describe <span class="hljs-string">&quot;#pretty_category_name&quot;</span> <span class="hljs-keyword">do</span>
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Now that things are organized, we can write some examples. To do this
+we write some <code>it</code> blocks for the different cases we wish to test.
+Since <code>#pretty_category_name</code> only has one line we will write an example describing
+how it should function:</p>
+<pre><code class="lang-ruby">  <span class="hljs-keyword">require</span> <span class="hljs-string">&apos;spec_helper&apos;</span>
+
+  describe Group <span class="hljs-keyword">do</span>
+    describe <span class="hljs-string">&quot;#pretty_category_name&quot;</span> <span class="hljs-keyword">do</span>
+      it <span class="hljs-string">&quot;should convert the suffix &apos;Group&apos; of a class name to &apos;Project&apos;&quot;</span>
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>When the method <code>it</code> is called this way, without a block, the example is
+considered <strong>pending</strong>. We can fill it in with some code to test the method.</p>
+<pre><code class="lang-ruby">  <span class="hljs-keyword">require</span> <span class="hljs-string">&apos;spec_helper&apos;</span>
+
+  describe Group <span class="hljs-keyword">do</span>
+    describe <span class="hljs-string">&quot;#pretty_category_name&quot;</span> <span class="hljs-keyword">do</span>
+      it <span class="hljs-string">&quot;should convert the suffix &apos;Group&apos; of a class name to &apos;Project&apos;&quot;</span> <span class="hljs-keyword">do</span>
+        group = SystemGroup.create!(<span class="hljs-symbol">:name</span> =&gt; <span class="hljs-string">&quot;sys_group&quot;</span>)
+        user  = User.create!(<span class="hljs-symbol">:login</span> =&gt; <span class="hljs-string">&quot;login&quot;</span>, <span class="hljs-string">&quot;password&quot;</span> =&gt; <span class="hljs-string">&quot;password&quot;</span>, ...)
+        expect(group.pretty_category_name(user)).to eq(<span class="hljs-string">&quot;System Project&quot;</span>)
+      <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>This is not ideal for a few different reasons:</p>
+<ul>
+<li>First, we are testing a class (SystemGroup) other than the one we are writing the spec for (Group).</li>
+<li>Second, the messy creation of the objects will become quite cumbersome if they have to
+be repeated for each example.</li>
+<li>Finally, the simple fact of having to define ALL attributes on a created object (e.g. because of the many validations on User) makes the code messy and draws focus away from what we are supposed be testing.</li>
+</ul>
+<p>Let&apos;s deal with the issues one at a time. First, we can pull the object creation
+out of the example in two ways. The first is defining instance variables in a
+<code>before(:each)</code> block. A <code>before(:each)</code> block is simply some code run before each
+example in a given describe block, and can be used for set up:</p>
+<pre><code class="lang-ruby">  describe Group <span class="hljs-keyword">do</span>
+    before(<span class="hljs-symbol">:each</span>) <span class="hljs-keyword">do</span>
+      @group = SystemGroup.create!(<span class="hljs-symbol">:name</span> =&gt; <span class="hljs-string">&quot;sys_group&quot;</span>)
+      @user  = User.create!(<span class="hljs-symbol">:login</span> =&gt; <span class="hljs-string">&quot;login&quot;</span>, <span class="hljs-string">&quot;password&quot;</span> =&gt; <span class="hljs-string">&quot;password&quot;</span>, ...)
+    <span class="hljs-keyword">end</span>
+
+    describe <span class="hljs-string">&quot;#pretty_category_name&quot;</span> <span class="hljs-keyword">do</span>
+      it <span class="hljs-string">&quot;should convert the suffix &apos;Group&apos; of a class name to &apos;Project&apos;&quot;</span> <span class="hljs-keyword">do</span>
+        expect(@group.pretty_category_name(@user)).to eq(<span class="hljs-string">&quot;System Project&quot;</span>)
+      <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>The other way is to use <code>let</code> statements. While <code>before(:each)</code> blocks can
+be used to run arbitrary code, let statements are specifically for setting up
+variables. In general, they are preferable, since they load lazily, i.e.
+the object isn&apos;t instantiated until the variable is used:</p>
+<pre><code class="lang-ruby">  describe Group <span class="hljs-keyword">do</span>
+    let(<span class="hljs-symbol">:group</span>) { SystemGroup.create!(<span class="hljs-symbol">:name</span> =&gt; <span class="hljs-string">&quot;sys_group&quot;</span>) }
+    let(<span class="hljs-symbol">:user</span>)  { User.create!(<span class="hljs-symbol">:login</span> =&gt; <span class="hljs-string">&quot;login&quot;</span>, <span class="hljs-string">&quot;password&quot;</span> =&gt; <span class="hljs-string">&quot;password&quot;</span>, ...) }
+
+    describe <span class="hljs-string">&quot;#pretty_category_name&quot;</span> <span class="hljs-keyword">do</span>
+      it <span class="hljs-string">&quot;should convert the suffix &apos;Group&apos; of a class name to &apos;Project&apos;&quot;</span> <span class="hljs-keyword">do</span>
+        expect(group.pretty_category_name(user)).to eq(<span class="hljs-string">&quot;System Project&quot;</span>)
+      <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Note that the <code>@</code> marker is no longer used. Now to avoid having to clutter our
+code with the definition of attributes we&apos;re not even testing, we can use factories.
+Factories allows us to create and save models with reasonable attributes. To use them, we define them in the file: &quot;spec/factories/portal_factories.rb&quot;. We can add the factories we need in the following way:</p>
+<pre><code class="lang-ruby">  <span class="hljs-comment">#################</span>
+  <span class="hljs-comment"># User          #</span>
+  <span class="hljs-comment">#################</span>
+
+  factory <span class="hljs-symbol">:user</span>, <span class="hljs-class"><span class="hljs-keyword">class</span>: <span class="hljs-title">NormalUser</span> <span class="hljs-title">do</span></span>
+    sequence(<span class="hljs-symbol">:login</span>)      { |n| <span class="hljs-string">&quot;user<span class="hljs-subst">#{n}</span>&quot;</span> }
+    sequence(<span class="hljs-symbol">:full_name</span>)  { |n| <span class="hljs-string">&quot;Bob <span class="hljs-subst">#{n}</span>&quot;</span> }
+    sequence(<span class="hljs-symbol">:email</span>)      { |n| <span class="hljs-string">&quot;user<span class="hljs-subst">#{n}</span>@example.com&quot;</span> }
+    password              <span class="hljs-string">&quot;Password!&quot;</span>
+    password_confirmation <span class="hljs-string">&quot;Password!&quot;</span>
+  <span class="hljs-keyword">end</span>
+
+  factory <span class="hljs-symbol">:normal_user</span>, <span class="hljs-symbol">parent:</span> <span class="hljs-symbol">:user</span>, <span class="hljs-class"><span class="hljs-keyword">class</span>: <span class="hljs-title">NormalUser</span> <span class="hljs-title">do</span></span>
+    sequence(<span class="hljs-symbol">:login</span>)      { |n| <span class="hljs-string">&quot;normal_user_<span class="hljs-subst">#{n}</span>&quot;</span> }
+  <span class="hljs-keyword">end</span>
+
+  <span class="hljs-comment">#################</span>
+  <span class="hljs-comment"># Group         #</span>
+  <span class="hljs-comment">#################</span>
+
+  factory <span class="hljs-symbol">:group</span> <span class="hljs-keyword">do</span>
+    sequence(<span class="hljs-symbol">:name</span>) { |n| <span class="hljs-string">&quot;group_<span class="hljs-subst">#{n}</span>&quot;</span> }
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>And then, we can simplify our spec code as follows:</p>
+<pre><code class="lang-ruby">  describe Group <span class="hljs-keyword">do</span>
+    let(<span class="hljs-symbol">:group</span>) { create(<span class="hljs-symbol">:group</span>) }
+    let(<span class="hljs-symbol">:user</span>)  { create(<span class="hljs-symbol">:user</span>) }
+
+    describe <span class="hljs-string">&quot;#pretty_category_name&quot;</span> <span class="hljs-keyword">do</span>
+      it <span class="hljs-string">&quot;should convert the suffix &apos;Group&apos; of a class name to &apos;Project&apos;&quot;</span> <span class="hljs-keyword">do</span>
+        expect(group.pretty_category_name(user)).to eq(<span class="hljs-string">&quot;System Project&quot;</span>)
+      <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>This creates the instance we need to run the code. Note that factories also have
+a <code>build</code> method to instantiate an object without saving it to the database. We
+have a problem now, however, in that the group is no longer a SystemGroup, and so
+will not produce the expected string. Furthermore, since the method is not meant to
+be used with the base Group class, we will get odd results. We could create another
+factory for a subclass of Group, but that would be overkill. All we need is one method:
+class. So instead of instantiating a whole new object, we can just stub the class
+method.</p>
+<p>Stubbing is a testing technique whereby we intercept method calls on an object, either
+to block them or fix their return values. We can do so in the following way to stub the
+<code>#class</code> method:</p>
+<pre><code class="lang-ruby">  describe Group <span class="hljs-keyword">do</span>
+    let(<span class="hljs-symbol">:group</span>) { create(<span class="hljs-symbol">:group</span>) }
+    let(<span class="hljs-symbol">:user</span>)  { create(<span class="hljs-symbol">:user</span>) }
+
+    describe <span class="hljs-string">&quot;#pretty_category_name&quot;</span> <span class="hljs-keyword">do</span>
+      it <span class="hljs-string">&quot;should convert the suffix &apos;Group&apos; of a class name to &apos;Project&apos;&quot;</span> <span class="hljs-keyword">do</span>
+        allow(group).to receive(<span class="hljs-symbol">:class</span>).and_return(SystemGroup)
+        expect(group.pretty_category_name(user)).to eq(<span class="hljs-string">&quot;System Project&quot;</span>)
+      <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>This idea of overkill is apparent as well in the case of the user object. It seems unnecessary
+to create an entire User object, just to pass it the method, and it is easier to use
+a mock object in this case. A mock object is a dummy object that simply takes the place of another object without doing anything. By default, it will not respond to any methods. Methods can be stubbed to add needed functionality. There are three methods we can use to create mock objects (See <a href="https://github.com/rspec/rspec-activemodel-mocks#rspecactivemodelmocks-" target="_blank">RSpec::ActiveModel::Mocks</a>):</p>
+<ul>
+<li><code>double</code>: create a basic mock object with no methods. A string is given as a first argument,
+this string is used to make error messages more readable. A hash can be given as second argument
+to conveniently define stubs.</li>
+<li><code>mock_model</code>: create a mock ActiveRecord object. This mock will have a few basic ActiveRecord
+methods already stubbed out. Also, an optional argument can be given to define which model is
+being mocked (allowing the model to respond to <code>#is_a?</code> and <code>#class</code>).</li>
+<li><code>stub_model(model)</code>: create an instance of the actual ActiveRecord model, but with methods
+interacting with the db stubbed out.</li>
+</ul>
+<p>For our purposes, we do not need any ActiveRecord functionality, so we can just use the standard
+double method.</p>
+<pre><code class="lang-ruby">  describe Group <span class="hljs-keyword">do</span>
+    let(<span class="hljs-symbol">:group</span>) { create(<span class="hljs-symbol">:group</span>) }
+    let(<span class="hljs-symbol">:user</span>)  { double(<span class="hljs-string">&quot;user&quot;</span>) }
+
+    describe <span class="hljs-string">&quot;#pretty_category_name&quot;</span> <span class="hljs-keyword">do</span>
+      it <span class="hljs-string">&quot;should convert the suffix &apos;Group&apos; of a class name to &apos;Project&apos;&quot;</span> <span class="hljs-keyword">do</span>
+        allow(group).to receive(<span class="hljs-symbol">:class</span>).and_return(SystemGroup)
+        expect(group.pretty_category_name(user)).to eq(<span class="hljs-string">&quot;System Project&quot;</span>)
+      <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>By default, a mock object will only respond to methods that have been stubbed on it. If we
+find ourselves needing a mock object on which methods will be called, but without really being
+concerned about their return values, we can create a mock as a null object. A null object
+will respond to any methods stubbed on it with the return values defined, and will accept
+and ignore any other method calls without raising a MethodMissing exception. To convert
+a standard mock into a null object, we simply call the <code>#as_null_object</code> method on it:</p>
+<pre><code class="lang-ruby">  double(<span class="hljs-string">&quot;user&quot;</span>).as_null_object
+</code></pre>
+<p>For the current example, however, this is unnecessary.</p>
+<h2 id="matchers">Matchers</h2>
+<p>One line that we did not discuss in the previous section was the line that actually
+defined our expectation:</p>
+<pre><code class="lang-ruby">  expect(group.pretty_category_name(user)).to eq(<span class="hljs-string">&quot;System Project&quot;</span>)
+</code></pre>
+<p>RSpec has a very rich set of <a href="https://relishapp.com/rspec/rspec-expectations/v/3-2/docs/built-in-matchers" target="_blank">built in matchers</a> to allow us to define our specs.</p>
+<p>One simple way to produce a matcher is to use RSpec&apos;s be_xxx matchers. The xxx part of the
+method name should be a predicate method defined on the object being tested.
+For example:</p>
+<pre><code class="lang-ruby">  it <span class="hljs-string">&quot;should not consider an empty object valid&quot;</span> <span class="hljs-keyword">do</span>
+    expect(Group.new).not_to be_valid
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>The <code>be_valid</code> matcher will call the <code>#valid?</code> method on the user object to test
+the expectation. Another example would be:</p>
+<pre><code class="lang-ruby">  it <span class="hljs-string">&quot;should start out with no users&quot;</span> <span class="hljs-keyword">do</span>
+    expect(create(<span class="hljs-symbol">:group</span>).users).to be_empty
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>This calls the <code>#empty?</code> method on the return value from the call to users.</p>
+<p>There are also matchers for class comparisons. The <code>be_a</code> matcher uses <code>#is_a?</code> to
+compare classes:</p>
+<pre><code class="lang-ruby">  it <span class="hljs-string">&quot;should be a Group&quot;</span> <span class="hljs-keyword">do</span>
+    expect(SystemGroup.new).to be_a(Group)
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>The <code>be_an_instance_of</code> requires that the classes match exactly:</p>
+<pre><code class="lang-ruby">  it <span class="hljs-string">&quot;should not be an instance of Group&quot;</span> <span class="hljs-keyword">do</span>
+    expect(SystemGroup.new).not_to be_an_instance_of(Group)
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>We can also define expectations on method calls using the <code>receive</code> method.
+In the DataProvider class, we expect the <code>#cache_prepare method</code> to check that
+the cache is ready to be modified before creating directories. This
+expectation can be written as:</p>
+<pre><code class="lang-ruby">  it <span class="hljs-string">&quot;should ensure that the cache is ready to be modified&quot;</span> <span class="hljs-keyword">do</span>
+    expect(SyncStatus).to receive(<span class="hljs-symbol">:ready_to_modify_cache</span>)
+    expect(provider.cache_prepare(userfile)).to be_truthy
+  <span class="hljs-keyword">end</span>
+</code></pre>
+<p>Note that the expectation is defined before the method is actually called.
+Also, not that a <code>#receive</code> call also effectively stubs out the method.
+This is by no means an exhaustive list of the types of matchers available in
+RSpec. For more documentation about all the matchers available see: <a href="https://relishapp.com/rspec/rspec-expectations/v/3-2/docs/built-in-matchers" target="_blank">https://relishapp.com/rspec/rspec-expectations/v/3-2/docs/built-in-matchers</a></p>
+<p>For more information, consult the <a href="https://pragprog.com/book/achbd/the-rspec-book" target="_blank">RSpec book</a> or <a href="https://relishapp.com/rspec/rspec-expectations/v/3-2/docs" target="_blank">online documentation about RSpec 3.2</a>.</p>
+<p><strong>Note</strong>: Original author of this document on RSpec is Tarek Sherif.</p>
+<script>
+if ('UA-XXXXXXXXX-X') {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-XXXXXXXXX-X', 'auto');
+	ga('send', 'pageview');
+}
+
+</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Test-Overview.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Testing Overview">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"RSpec Basics","level":"3.1.3.2","depth":3,"previous":{"title":"Testing Overview","level":"3.1.3.1","depth":3,"path":"3-programmer/testing-suite/Test-Overview.md","ref":"3-programmer/testing-suite/Test-Overview.md","articles":[]},"dir":"ltr"},"config":{"plugins":["insert-logo","favicon","analytics","expandable-chapters","hide-published-with"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"analytics":{"google":"UA-XXXXXXXXX-X"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":{"shortcut":"/images/favicon.ico","bookmark":"/images/favicon.ico","appleTouch":"/images/favicon.ico","appleTouchMore":{"120x120":"/images/favicon.ico","180x180":"/images/favicon.ico"}},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"url":"https://raw.githubusercontent.com/natacha-beck/cbrain-book_img/master/small-logo.png"},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"My Book","gitbook":"*"},"file":{"path":"3-programmer/testing-suite/RSpec-Basics.md","mtime":"2018-01-16T20:57:56.054Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-16T21:18:10.200Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
